@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom left, #c5e9ba, #77ccf3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Search bar styles */
+.searchbar {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 500px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 3px 5px 1px #3333337c;
+}
+
+/* searchbar div and input styles */
+.searchbar div {
+    width: 100%;
+    padding: 5px;
+    background: #333;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.searchbar div input {
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.searchbar input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.searchbar div span {
+    margin-left: 5px;
+    color: rgb(101, 101, 252);
+}
+
+/* search icon styles */
+.searchbar .search-icon {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+/* Mini styles */
+.searchbar.mini {
+    width: 62px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar.mini div {
+    display: none;
+    overflow: hidden;
+}
+
+.searchbar.mini .search-icon {
+    margin: 0;
+    font-weight: 500;
+}
