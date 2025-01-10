@@ -14,6 +14,7 @@ const words = [
     "Problem Solving",
 ];
 
+//split the word into array of individual letters and get them one by one
 function getLetter() {
     let word = words[index].split("");
     typing.textContent += word[currentLetter];
@@ -43,7 +44,6 @@ function clearWord() {
         }, 100);
     } else {
         typing.textContent = "";
-
         if (words.length - 1 === index) {
             index = 0;
         }
