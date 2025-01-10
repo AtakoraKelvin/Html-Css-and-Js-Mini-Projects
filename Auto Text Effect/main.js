@@ -38,8 +38,8 @@ function clearWord() {
             let word = typing.textContent.split("");
             word.pop();
             typing.textContent = word.join("");
-            clearWord();
             currentLetter--;
+            clearWord();
         }, 100);
     } else {
         typing.textContent = "";
