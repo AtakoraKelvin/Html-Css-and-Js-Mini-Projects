@@ -5,3 +5,5 @@
 2. Search bar Animation
 
 3. Auto Text effect
+
+4. BG scroll Fade Effect
