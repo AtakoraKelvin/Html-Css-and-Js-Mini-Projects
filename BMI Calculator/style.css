@@ -48,10 +48,24 @@ button {
     margin-top: 5px;
 }
 
+.container button {
+    box-shadow: 2px 2px 2px #3333337c, -2px -2px 2px #3333337c;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    background: #ffccaa;
+    cursor: pointer;
+}
+.container button:hover {
+    background: #ffcc77;
+}
+
 .wrapper output {
     display: block;
     border: 1px solid #70e2ff;
     background: #fff;
+    line-height: 42px;
+    padding: 0 10px;
 }
 
 .container .wrapper label {
