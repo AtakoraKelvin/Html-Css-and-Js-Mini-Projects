@@ -7,3 +7,5 @@
 3. Auto Text effect
 
 4. BG scroll Fade Effect
+
+5. BMI Calculator
