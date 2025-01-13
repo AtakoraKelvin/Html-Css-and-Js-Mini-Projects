@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+}
+
+button {
+    height: 55px;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.ripple-btn {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+button.ripple-btn span {
+    color: #252525;
+    /* z-index: 5; */
+}
+
+button.ripple-btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fff500;
+}
