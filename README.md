@@ -9,3 +9,5 @@
 4. BG scroll Fade Effect
 
 5. BMI Calculator
+
+6. Button Ripple Effect
