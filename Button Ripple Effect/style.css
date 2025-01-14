@@ -24,25 +24,34 @@ button {
     cursor: pointer;
 }
 
-button.ripple-btn {
+/*
+Don't quite understand why z-index alone didn't put my span 
+text first before the ::befor content but position:relative helped
+*/
+button.ripple-btn span {
     position: relative;
-    /* overflow: hidden; */
+    z-index: 2;
 }
 
-button.ripple-btn span {
-    color: #252525;
-    /* z-index: 5; */
+button.ripple-btn {
+    position: relative;
+    overflow: hidden;
 }
 
 button.ripple-btn::before {
     content: "";
     position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
+    width: 0;
+    height: 0;
+    top: var(--Y);
+    left: var(--X);
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
     background: #fff500;
+    transition: 0.5s linear;
+}
+
+button.ripple-btn:hover::before {
+    width: 350px;
+    height: 350px;
 }
