@@ -11,3 +11,5 @@
 5. BMI Calculator
 
 6. Button Ripple Effect
+
+7. Clock
