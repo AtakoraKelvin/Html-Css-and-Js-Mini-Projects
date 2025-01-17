@@ -28,7 +28,7 @@ body.light {
     width: 100px;
     height: 50px;
     background: #000;
-    border-radius: 30px;
+    border-radius: 40px;
     position: relative;
     cursor: pointer;
 }
@@ -42,6 +42,7 @@ label span {
     height: 46px;
     background: var(--dark-text-color);
     border-radius: 50%;
+    transition: 0.3s ease;
 }
 
 #toggler:checked + label {
@@ -49,7 +50,6 @@ label span {
 }
 
 #toggler:checked + label span {
-    left: 0;
-    right: 2px;
+    left: calc(100% - 48px);
     background: var(--light-text-color);
 }
