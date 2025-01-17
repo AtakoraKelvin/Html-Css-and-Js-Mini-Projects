@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-bg: #fff;
+    --light-text-color: #262626;
+
+    --dark-bg: #333;
+    --dark-text-color: #fff;
+}
+
+body.light {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggler {
+    display: none;
+}
+
+#toggler + label {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #000;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+label span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background: var(--dark-text-color);
+    border-radius: 50%;
+}
+
+#toggler:checked + label {
+    background: var(--dark-text-color);
+}
+
+#toggler:checked + label span {
+    left: 0;
+    right: 2px;
+    background: var(--light-text-color);
+}
