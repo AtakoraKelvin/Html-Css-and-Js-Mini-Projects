@@ -13,3 +13,5 @@
 6. Button Ripple Effect
 
 7. Clock
+
+8. Dark Mode Toggler
