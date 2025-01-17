@@ -12,7 +12,7 @@
     --dark-text-color: #fff;
 }
 
-body.light {
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ body.light {
     display: block;
     width: 100px;
     height: 50px;
-    background: #000;
+    background: var(--light-text-color);
     border-radius: 40px;
     position: relative;
     cursor: pointer;
